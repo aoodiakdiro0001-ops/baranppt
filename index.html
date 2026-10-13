@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <meta name="google-site-verification" content="sUdW_XpImN1GAPBLydgCJ1f4QelcRviwpb5r5rIQrlI" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Baran PowerPoint | Slides with AI Outline Builder</title>
@@ -351,7 +352,8 @@ toast(t('dlDone'));
 function dlHTML(){
 syncStage();
 const css='.slide{background:#fff;color:#111;aspect-ratio:16/9;padding:36px 44px;margin:0 auto 18px;max-width:900px;border:1px solid #ccc}.cols{display:flex;gap:20px}.cols>div{flex:1}img{max-width:100%}table{border-collapse:collapse}td,th{border:1px solid #999;padding:5px 10px}';
-const h='<!DOCTYPE html><html><head><meta charset="utf-8"><title>'+DECK.title+'</title><style>'+css+'</style></head><body>'+DECK.slides.map(s=>slideHTML(s,true)).join('')+'</body></html>';
+const h='<!DOCTYPE html><html><head>
+    <meta name="google-site-verification" content="sUdW_XpImN1GAPBLydgCJ1f4QelcRviwpb5r5rIQrlI" /><meta charset="utf-8"><title>'+DECK.title+'</title><style>'+css+'</style></head><body>'+DECK.slides.map(s=>slideHTML(s,true)).join('')+'</body></html>';
 document.getElementById('dlPre').textContent=h.slice(0,3000)+'…';
 document.getElementById('dlModal').classList.add('show');
 const b=new Blob([h],{type:'text/html'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='baran-ppt.html';a.click();
